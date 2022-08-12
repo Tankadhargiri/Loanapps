@@ -1,0 +1,15 @@
+.divSearch{
+    width: 500px;
+    margin-left: 400px;
+    margin-top: 20px;
+}
+.div1Grid{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px; 
+    border: 1px solid gray; 
+}
+.div2Grid{
+    margin-top: 10px;
+    margin-left: 10px;
+}

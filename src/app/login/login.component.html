@@ -1,0 +1,14 @@
+<div>
+    <mat-card class="divLogin">
+        <div class="loginHeader"><b>Sign In</b></div>
+        <form [formGroup]="formGroup" (ngSubmit)="loginProcess()">
+            <input class="form-control" placeholder="Username" formControlName='username' />
+            <br />
+            <input class="form-control" type="password" placeholder="Password" formControlName='password' />
+
+            <br />
+            <button type="submit" class="btn btnLogin">Login</button>
+        </form>
+
+    </mat-card>
+</div>

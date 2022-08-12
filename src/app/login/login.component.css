@@ -1,0 +1,19 @@
+.loginHeader{
+    margin-bottom: 20px;
+    /* background-color: darkgrey; */
+    border-radius: 4px;
+    text-align: center;
+    height: 30px;
+}
+.btnLogin{
+    margin-left: 100px;
+    background-color:darkgoldenrod;
+}
+.divLogin{
+    margin-left: 100px; 
+    border: 1px solid gray;
+    width: 300px; 
+    margin-left: 450px;
+    margin-top: 100px;
+    background-color: wheat;
+}

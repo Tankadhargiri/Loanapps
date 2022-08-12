@@ -1,0 +1,15 @@
+.div1Header{
+    border:1px solid cornflowerblue;
+    background-color: cadetblue;
+}
+.div2Header{
+    margin-top:5px;
+    margin-bottom: 5px; 
+    margin-left: 650px;
+}
+.btnHome{
+    background-color: lightblue;
+}
+.btnHeadCol{
+    background-color: lightblue;
+}

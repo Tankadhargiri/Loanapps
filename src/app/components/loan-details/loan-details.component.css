@@ -1,0 +1,19 @@
+.div1Head{
+    border: 1px solid grey; 
+    width: 700px;
+    height: 590px; 
+    margin-left: 300px;
+    margin-top: 50px;
+}
+.div2Head{
+    width: 500px; 
+    margin-top: 20px; 
+    margin-left: 150px;
+}
+
+.lblleft10{
+    margin-left: 100px;
+}
+.lblleft20{
+    margin-left: 200px;
+}

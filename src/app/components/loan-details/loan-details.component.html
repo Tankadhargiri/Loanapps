@@ -1,0 +1,75 @@
+<app-head></app-head>
+
+
+<div class="div1Head">
+
+  <div class="div2Head">
+    <div><label class="lblleft10" style="color: peru;"><b>Loan Details</b></label></div>
+    <br/>
+    <div class="submit-form">
+      <div *ngIf="!submitted">
+
+        <div class="mb-3 row">
+            <label for="loanNo" class="col-sm-3 col-form-label">Loan No</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="loanNo"  [(ngModel)]="oldLoan.loanNo" name="loanNo">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="loanDetail" class="col-sm-3 col-form-label">Loan Details</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="loanDetail"  [(ngModel)]="oldLoan.loanDetail"
+                name="loanDetail">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="term" class="col-sm-3 col-form-label">Loan Term</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="term"  [(ngModel)]="oldLoan.term"
+                name="term">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="uFirstName" class="col-sm-3 col-form-label">First Name</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="uFirstName"  [(ngModel)]="oldLoan.uFirstName"
+                name="uFirstName">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="uLastName" class="col-sm-3 col-form-label">Last Name</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="uLastName"  [(ngModel)]="oldLoan.uLastName"
+                name="uLastName">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="uEmail" class="col-sm-3 col-form-label">Email</label>
+            <div class="col-sm-7">
+              <input type="text" class="form-control" id="uEmail"  [(ngModel)]="oldLoan.uEmail" name="uEmail">
+            </div>
+          </div>
+  
+          <div class="mb-3 row">
+            <label for="amount" class="col-sm-3 col-form-label">Amount</label>
+            <div class="col-sm-7">
+              <input type="number" class="form-control" id="amount" required [(ngModel)]="oldLoan.amount" name="uAddress">
+            </div>
+          </div>
+        <br />
+        <button (click)="updateLoan()"  *ngIf= "role == 'Admin'" class="btn btn-success lblleft10" >Update</button>
+        &nbsp; <button (click)="cancelLoan()"  class="btn btn-danger">Cancel</button>
+    </div>
+      <div *ngIf="submitted">
+        <h5 style="margin-left: 50px; color: green;"> updated successfully</h5>
+      </div>
+    </div>
+  </div>
+
+</div>
+

@@ -1,0 +1,61 @@
+<app-head></app-head>
+
+<div class="divSearch">
+    <form class="d-flex" role="search" >
+        <input class="form-control me-5" #searchInput type="search" placeholder="Search loan"  aria-label="Search">
+        <button class="btn btn-outline-success" type="submit" (click)="searchByName(searchInput.value)">Search</button>
+       &nbsp; <button class="btn btn-outline-success" type="submit" (click)="getLoan()">Clear</button>
+    </form>
+</div>
+
+
+<div class="div1Grid">
+    <div class="div2Grid">
+        <table class="table table-striped">
+            <tr>
+                <th>ID</th>
+                <th>LoanNumber</th>
+                <th>Loan Details</th>
+                <th>Loan Term</th>
+                <th>First name</th>
+                <th>Last Name</th>
+                <th>Email </th>
+                <th>Amount</th>
+                <th>Action </th>
+            </tr>
+            <tbody>
+                <tr *ngFor="let loan of loanList">
+                    <td>
+                        {{loan.id}}
+                    </td>
+                    <td>
+                        {{loan.loanNo}}
+                    </td>
+                    <td>
+                        {{loan.loanDetail}}
+                    </td>
+                    <td>
+                        {{loan.term}}
+                    </td>
+                    <td>
+                        {{loan.uFirstName}}
+                    </td>
+                    <td>
+                        {{loan.uLastName}}
+                    </td>
+                    <td>
+                        {{loan.uEmail}}
+                    </td>
+                    <td>
+                        {{loan.amount}}
+                    </td>
+                    <td>
+                        <button (click) = "updateEmployee(loan.id)" class = "btn btn-primary"> View/Update</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+</div>
